@@ -17,7 +17,7 @@ body {
 
 .container {
   width: 330px;
-  background: #fff;
+  /* background: #fff; */
   border-radius: 5px;
   text-align: center;
   padding: 20px 35px 20px 15px;
@@ -34,6 +34,9 @@ body {
   overflow: hidden;
 }
 
+.outer-form {
+  padding: 50px;
+}
 .form-outer form{
   display: flex;
   width: 400%;
@@ -202,7 +205,11 @@ display: none;
   color: #fff;
 }
 
-
+@media screen and (max-width: 600px) {
+  .form-outer{
+    flex-direction: column;
+  }
+}
 
 
 
