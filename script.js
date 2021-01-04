@@ -42,7 +42,7 @@ submitBtn.addEventListener("click", function() {
   current += 1;
   setTimeout(function(){
 
-    alert("Thank you form your submission");
+    alert("thanks");
     location.reload();
   }, 800);
 });
