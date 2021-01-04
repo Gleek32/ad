@@ -220,7 +220,7 @@ display: none;
   color: #fff;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 100%) {
   .form-outer{
     flex-direction: column;
   }
