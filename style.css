@@ -195,7 +195,10 @@ animation: animate 0.3s linear forwards; /*infinite*/
   zoom: 1.0;
   width: extended-to-zoom;
 }
-
+@-ms-viewport{
+  width: extended-to-zoom;
+  zoom: 1.0;
+}
 .progress-bar .step .bullet span{
   font-weight: 500;
   font-size: 17px;
