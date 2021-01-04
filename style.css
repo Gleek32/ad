@@ -17,7 +17,7 @@ body {
 
 .container {
   width: 330px;
-  /* background: #fff; */
+  background: #fff;
   border-radius: 5px;
   text-align: center;
   padding: 20px 35px 20px 15px;
@@ -61,7 +61,7 @@ body {
   position: relative;
 }
 
-.form-outer form .page .field .label{
+.form-outer form .page .field .label {
   position: absolute;
   top: -30px;
   font-weight: 500;
@@ -70,28 +70,30 @@ body {
 .form-outer form .page .field input {
   height: 100%;
   width: 100%;
-  border: 1px solid lightgray;
-  border-radius: 5px;
+  border: 1px solid lightblack;
+  border-radius: 5px solid black;
   font-size: 18px;
   padding-left: 15px;
 }
 
 form .page .field select{
   width: 100%;
-  font-size: 10px;
+  padding-left: 10px;
+  font-size: 17px;
   font-weight: 500;
 }
 
 .form-outer form .page .field button{
   width: 100%;
   height: calc(100% + 5px);
-  margin-top: 20px;
+  margin-top: -20px;
   border: none;
   background: #d43f8d;
   border-radius: 5px;
   color: #fff;
   font-size: 18px;
   font-weight: 500;
+  letter-spacing: 1px;
   text-transform: uppercase;
   cursor: pointer;
   transition: 0.3s ease;
@@ -130,6 +132,11 @@ margin-left: 3px;
   font-weight: 500;
   color: #000;
   margin-bottom: 8px;
+  transition: 0.2s;
+}
+
+.progress-bar .step p.active {
+  color: #d43f8d;
 }
 
 .progress-bar .step  .bullet{
@@ -166,10 +173,11 @@ transition: 0.2s;
 }
 
 .progress-bar .step .bullet.active:after{
+  border-color: #d43f8d;
 background:  #d43f8d;
 transform: scaleX(0);
 transform-origin: left;
-animation: animate 0.3s linear forwards;
+animation: animate 0.3s linear forwards; /*infinite*/
 }
 
 @keyframes animate {
@@ -179,7 +187,7 @@ animation: animate 0.3s linear forwards;
 
 }
 
-.progress-bar .step span{
+.progress-bar .step .bullet span{
   font-weight: 500;
   font-size: 17px;
   line-height: 25px;
@@ -188,9 +196,10 @@ animation: animate 0.3s linear forwards;
   transform: translateX(-50%);
 }
 
-.progress-bar .step .check{
+.progress-bar .step .bullet.active span{
   display: none;
 }
+
 .progress-bar .step .check{
 position: absolute;
 left: 50%;
@@ -198,6 +207,12 @@ top: 70%;
 font-size: 15px;
 transform: translate(-50%, -50%);
 display: none;
+}
+
+.progress-bar .step .check.active{
+
+  display: block;
+  color: #fff;
 }
 
 .progress-bar .step .check.active{
@@ -212,11 +227,7 @@ display: none;
 }
 
 
-@media screen and (max-width: 600px) {
-  .contact-form{
-    flex-direction: column;
-  }
-}
+
 
 
 
