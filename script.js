@@ -42,7 +42,7 @@ submitBtn.addEventListener("click", function() {
   current += 1;
   setTimeout(function(){
 
-    alert("thanks");
+    redirect("/");
     location.reload();
   }, 800);
 });

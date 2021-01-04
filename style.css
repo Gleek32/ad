@@ -16,14 +16,16 @@ body {
 }
 
 .container {
+
   width: 330px;
   background: #fff;
   border-radius: 5px;
   text-align: center;
-  padding: 20px 35px 20px 15px;
+  padding: 20px 35px 10px 5px;
 }
 
 .container header{
+
   font-size: 35px;
   font-weight: 600;
   margin: 0 0 30px 0;
@@ -32,10 +34,12 @@ body {
 .container .form-outer{
   width: 100%;
   overflow: hidden;
+
 }
 
 .outer-form {
-  padding: 50px;
+  padding: 10px;
+
 }
 .form-outer form{
   display: flex;
@@ -54,7 +58,7 @@ body {
 }
 
 .form-outer form .page .field{
-  height: 45px;
+  height: 35px;
   width: 330px;
   margin: 45px 0;
   display: flex;
@@ -187,6 +191,10 @@ animation: animate 0.3s linear forwards; /*infinite*/
 
 }
 
+@viewport{
+  zoom: 1.0;
+  width: extended-to-zoom;
+}
 .progress-bar .step .bullet span{
   font-weight: 500;
   font-size: 17px;
