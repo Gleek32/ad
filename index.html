@@ -4,8 +4,12 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="style.css">
-  <meta name="viewport" content="width-device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes">
+  <!-- <meta name="viewport" content="width-device-width, initial-scale=1"> -->
   <script  src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+  <!-- <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <title></title>
 </head>
 
@@ -47,52 +51,55 @@
       </div>
 
     <div class="form-outer">
-      <form action="#" method="get">
+      <form class="form-group"action="#" method="get">
+      <!-- <form action="mailto:millerglen32@gmail.com" method="POST"> -->
         <div class="page slidepage">
           <div class="title">basic Info</div>
 
-          <div class="field">
-            <div class="label">Type of Loan</div>
-            <select class="" name="">
-              <option value="">Home refinace</option>
-              <option value="">Home purchase</option>
-              <option value="">Cash-out Refinace</option>
+          <div class="field form-group">
+            <div id="loan"class="label">Type of Loan</div>
+            <select id="loan" name="">
+              <option id="refi"value="home refinace">Home refinace</option>
+              <option id="purchase"value="home purchase">Home purchase</option>
+              <option id="cash"value="cash-out refinace">Cash-out Refinace</option>
             </select>
           </div>
-          <div class="field">
+
+          <div class="field form-group">
             <div class="label">Home Description</div>
             <select class="" name="">
-              <option value="">Single Family</option>
-              <option value="">Multi-Family</option>
-              <option value="">Condominium</option>
-              <option value="">Townhouse</option>
+              <option id="single"value="">Single Family</option>
+              <option id="multi"value="">Multi-Family</option>
+              <option id="condo"value="">Condominium</option>
+              <option id="town"value="">Townhouse</option>
             </select>
           </div>
-          <div class="field">
+
+          <div class="field form-group">
             <div class="label">Property Use</div>
             <select class="" name="">
-              <option value="">Primary Residence</option>
-              <option value="">Secondary Home</option>
-              <option value="">Investment Property</option>
-              <option value="">Townhouse</option>
+              <option id="primary"value="">Primary Residence</option>
+              <option id="second"value="">Secondary Home</option>
+              <option id="invest"value="">Investment Property</option>
             </select>
           </div>
-          <div class="field">
+
+          <div class="field form-group">
             <div class="label">Why do you want to refinace?</div>
             <select>
-              <option value="">Lower my montly payments</option>
+              <option id="lower"value="">Lower my montly payments</option>
               <option value="">Pay off my mortgae faster</option>
               <option value="">Use my equity for extra cash</option>
               <option value="">Change my ARM loan to Fixed</option>
             </select>
           </div>
-          <div class="field nextBtn">
+          <div class="field btns nextBtn">
             <button>Next</button>
           </div>
         </div>
 
         <div class="page">
-          <div class="field">
+          <div class="field form-group">
             <div class="label" >Mortgage Balance</div>
             <input type="number" placeholder="199,200">
           </div>
@@ -105,7 +112,7 @@
         <div class="page">
 
             <div class="label">Active or previous U.S military service?</div>
-              <div class="field">
+              <div class="field form-group">
             <select >
               <option value="">Yes</option>
               <option value="">No</option>
@@ -120,7 +127,7 @@
               <option value="">Poor -579</option>
             </select>
           </div>
-          <div class="field">
+          <div class="field form-group">
             <div class="label">Do you have a 2nd mortgage?</div>
             <select>
               <option value="">Yes</option>
@@ -128,11 +135,11 @@
             </select>
           </div>
           <div class="field">
-            <div class="label">Number of late payments in last 12mths</div>
+            <div id="late"class="label">Number of late payments in last 12mths</div>
             <select>
-              <option value="">None</option>
-              <option value="">1</option>
-              <option value="">2</option>
+              <option id="none"value="">None</option>
+              <option id="one"value="">1</option>
+              <option id="two"value="">2</option>
             </select>
           </div>
           <div class="field btns">
@@ -144,25 +151,25 @@
         <div class="page">
 
           <div class="title">Contact Information:</div>
-             <div class="field ">
-            <div class="label">First Name</div>
-            <input class="title"type="text">
+             <div class="field form-group">
+            <div class="label" value="firstName">First Name</div>
+            <input id="firstName"class="title"type="text">
           </div>
-          <div class="field ">
-            <div class="label">Last Name</div>
-            <input type="text">
+          <div class="field form-group">
+            <div class="label"value="lastName" >Last Name</div>
+            <input id="lastName" type="text">
           </div>
-          <div class="field">
-            <div class="label">Email Address</div>
-            <input type="email">
+          <div class="field form-group">
+            <div class="label" value="email">Email Address</div>
+            <input id="email"type="email">
             </div>
-            <div class="field">
-              <div class="label">Callback Number</div>
-              <input type="number">
+            <div class="field form-group">
+              <div class="label" value="callback">Callback Number</div>
+              <input id="callback"type="number">
               </div>
           <div class="field btns">
             <button class="prev-3 prev">Previous</button>
-            <button class="submit  next" >Submit</button>
+            <button type="submit" class="submit  next" >Submit</button>
           </div>
 
         </div>

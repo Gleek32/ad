@@ -10,6 +10,7 @@ const progressText = document.querySelectorAll(".step p");
 const progressCheck = document.querySelectorAll(".step .check");
 const bullet = document.querySelectorAll(".step .bullet");
 
+
 let max = 4;
 let current = 1;
 
@@ -67,4 +68,68 @@ prevBtnFourth.addEventListener("click", function() {
   progressCheck[current - 2].classList.remove("active");
   progressCheck[current - 2].classList.remove("active");
   current -= 1;
+});
+
+$('form').on('submit', (e) => {
+  e.preventDefault();
+
+  const loan = $('#loan').val().trim();
+  const refi = $('#refi').val().trim();
+  const purchase = $('#purchase').val().trim();
+  const cash = $('#cash').val().trim();
+
+  const single = $('#single').val().trim();
+  const multi = $('#multi').val().trim();
+  const condo = $('#condo').val().trim();
+  const town = $('#town').val().trim();
+
+
+  const primary = $('#primary').val().trim();
+  const second = $('#second').val().trim();
+  const invest = $('#invest').val().trim();
+
+
+
+  const firstName = $('#firstName').val().trim();
+  const lastName = $('#lastName').val().trim();
+  const email = $('#email').val().trim();
+  const callback = $('#callback').val().trim();
+
+  const data = {
+    loan,
+    refi,
+    purchase,
+    cash,
+
+  };
+  $.post('/email', data, function() {
+    console.log('Server received data');
+  });
+
+  const data1 = {
+    single,
+    multi,
+    condo,
+    town,
+  };
+  $.post('/email1', data1, function() {
+    console.log('Server received data');
+});
+    const data2 = {
+      primary,
+      second,
+      invest,
+    };
+    $.post('/email2', data2, function() {
+      console.log('Server received data');
+});
+      const data3 = {
+        firstName,
+        lastName,
+        email,
+        callback
+      };
+      $.post('/email3', data3, function() {
+        console.log('Server received data');
+});
 });
