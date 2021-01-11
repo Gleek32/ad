@@ -105,13 +105,15 @@ body {
 }
 
 
-@media screen and (max-width: 1150px)
+@media screen and (max-width: 1150px){
 .col {
  width: 330px; 
 }
+}
 
-@media screen and (max-width: 750px)
+@media screen and (max-width: 750px){
 .col {
  width: 100%;
  height: 300px; 
+}
 }
