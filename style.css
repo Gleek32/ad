@@ -305,7 +305,6 @@ body {
   cursor: pointer;
 } 
 
-
 .green   {
   color: #ffffff;
   background-color: #8373e6;
@@ -673,8 +672,8 @@ width: 400px;
   transform: translate(-50%, -50%);
   /* width: 450px;
   margin-top: 50px; */
-}
+/* }
 h2 {
   padding-bottom: 10px;
 }
-} */
+} */ 
