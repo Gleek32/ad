@@ -111,8 +111,12 @@ form {
   margin: auto;
   border: 2px solid white;
   padding: 20px;
-  font-size: 20px;;
-}
+  font-size: 20px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  }
 
 input[type=text] {
   width: 100%;
@@ -139,6 +143,12 @@ input[type=button] {
 .col {
  width: 630px; 
 }
+form {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 }
 
 @media screen and (max-width: 750px){
@@ -149,5 +159,15 @@ input[type=button] {
 .radio-btn {
   height: 90px;
   display: inline-block;
+
+}
+form {
+width: 450px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* width: 450px;
+  margin-top: 50px; */
 }
 }
