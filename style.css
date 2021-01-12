@@ -189,12 +189,14 @@ form {
 
 }
   .fix {
-  height: 140px;
+  height: 100px;
+    font-size: 10px;
+  font-weight: 300;
   background-color: green;
 }
-  .fix1 {
   height: 80px;
-  font-size: 50px;
+  font-size: 10px;
+  font-weight: 300;
 }
   .contact {
   height: 400px;
