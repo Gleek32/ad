@@ -192,6 +192,10 @@ form {
   height: 140px;
   background-color: green;
 }
+  .fix1 {
+  height: 80px;
+  font-size: 50px;
+}
   .contact {
   height: 400px;
   width: 400px;
