@@ -181,12 +181,18 @@ form {
 @media screen and (max-width: 750px){
 .col {
  width: 100%;
- height: 680px; 
+ height: 750px; 
 }
 .radio-btn {
   height: 100px;
   display: inline-block;
 
+}
+  .contact {
+  height: 400px;
+  width: 400px;
+  font-size: 20px;
+  padding-top: 50px;
 }
 form {
 width: 400px;
