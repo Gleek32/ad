@@ -188,6 +188,10 @@ form {
   display: inline-block;
 
 }
+  .fix {
+  height: 120px;
+  background-color: green;
+}
   .contact {
   height: 400px;
   width: 400px;
